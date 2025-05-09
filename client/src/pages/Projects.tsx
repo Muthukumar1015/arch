@@ -20,10 +20,10 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Projects | Architecture+Design</title>
+        <title>Projects | Deva Architecture | Chennai</title>
         <meta 
           name="description" 
-          content="Browse our diverse portfolio of architectural and interior design projects spanning residential, commercial, and sustainable buildings."
+          content="Browse our diverse portfolio of architectural and interior design projects across Chennai and South India, spanning residential, commercial, and sustainable buildings."
         />
       </Helmet>
       

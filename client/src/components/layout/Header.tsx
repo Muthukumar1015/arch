@@ -37,7 +37,7 @@ export default function Header() {
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-display font-bold tracking-wider">
-          Architecture<span className="text-accent">+</span>Design
+          Deva<span className="text-accent"> Architecture</span>
         </Link>
         
         {/* Desktop Navigation */}

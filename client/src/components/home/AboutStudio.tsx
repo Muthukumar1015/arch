@@ -5,13 +5,13 @@ export default function AboutStudio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-              Award-winning architectural studio
+              Chennai's Premier Architectural Studio
             </h2>
             <p className="text-gray-600 mb-6">
-              Architecture + Design is an internationally recognized architectural and interior design firm with offices in Milan, New York, and Singapore. Founded in 2005, our team of 50+ professionals brings diverse expertise to create innovative solutions for our clients worldwide.
+              Deva Architecture is a leading architectural and interior design firm based in Chennai, with projects across Tamil Nadu and South India. Founded in 2005, our team of 30+ architects and designers brings local expertise and global perspectives to create innovative solutions for our clients.
             </p>
             <p className="text-gray-600 mb-8">
-              Our approach combines aesthetic vision with technical innovation and sustainable practices. We believe in design that respects context, culture, and environment while pushing boundaries to create meaningful spaces that inspire and endure.
+              Our approach combines traditional Indian architectural wisdom with contemporary design and sustainable practices. We believe in creating spaces that honor cultural context, enhance community, and harmonize with the local environment while delivering modern functionality.
             </p>
             <div className="flex flex-wrap gap-8">
               <div>

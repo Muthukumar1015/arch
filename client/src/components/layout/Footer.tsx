@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <h3 className="text-xl font-display font-bold mb-6">
-              Architecture<span className="text-accent">+</span>Design
+              Deva<span className="text-accent"> Architecture</span>
             </h3>
             <p className="text-gray-400 mb-6">
-              Creating inspiring spaces that transform how people live, work, and experience the built environment.
+              Creating inspiring spaces that transform how people live, work, and experience the built environment across Chennai and beyond.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-accent" aria-label="Instagram">
@@ -58,22 +58,22 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3"></i>
-                <span>123 Design Street, Milan, Italy</span>
+                <span>42 Cathedral Road, Chennai, Tamil Nadu 600086, India</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone mt-1 mr-3"></i>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 (044) 2233-4455</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-envelope mt-1 mr-3"></i>
-                <span>info@architectureplus.design</span>
+                <span>info@deva-architecture.in</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500">© {new Date().getFullYear()} Architecture+Design. All rights reserved.</p>
+          <p className="text-gray-500">© {new Date().getFullYear()} Deva Architecture. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6 text-sm text-gray-500">
               <li><a href="#" className="hover:text-gray-400">Privacy Policy</a></li>

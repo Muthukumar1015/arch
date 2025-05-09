@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Architecture+Design | Inspiring Spaces</title>
+        <title>Deva Architecture | Chennai's Premier Architectural Studio</title>
         <meta 
           name="description" 
-          content="Award-winning architecture and interior design studio creating innovative, sustainable and aesthetic solutions worldwide."
+          content="Award-winning architecture and interior design studio in Chennai creating innovative, sustainable and aesthetic solutions across South India."
         />
       </Helmet>
       

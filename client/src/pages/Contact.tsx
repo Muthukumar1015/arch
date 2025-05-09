@@ -157,27 +157,27 @@ export default function Contact() {
                 
                 <div className="space-y-8">
                   <div>
-                    <h3 className="font-display text-xl font-bold mb-2">Milan (Headquarters)</h3>
-                    <p className="text-gray-600 mb-1">123 Design Street</p>
-                    <p className="text-gray-600 mb-1">20121 Milan, Italy</p>
-                    <p className="text-gray-600 mb-3">+39 02 1234 5678</p>
-                    <p className="text-gray-600">milan@architectureplus.design</p>
+                    <h3 className="font-display text-xl font-bold mb-2">Chennai (Headquarters)</h3>
+                    <p className="text-gray-600 mb-1">42 Cathedral Road</p>
+                    <p className="text-gray-600 mb-1">Chennai, Tamil Nadu 600086, India</p>
+                    <p className="text-gray-600 mb-3">+91 (044) 2233-4455</p>
+                    <p className="text-gray-600">info@deva-architecture.in</p>
                   </div>
                   
                   <div>
-                    <h3 className="font-display text-xl font-bold mb-2">New York</h3>
-                    <p className="text-gray-600 mb-1">456 Architecture Avenue</p>
-                    <p className="text-gray-600 mb-1">New York, NY 10001, USA</p>
-                    <p className="text-gray-600 mb-3">+1 212 555 6789</p>
-                    <p className="text-gray-600">newyork@architectureplus.design</p>
+                    <h3 className="font-display text-xl font-bold mb-2">Coimbatore</h3>
+                    <p className="text-gray-600 mb-1">15 Race Course Road</p>
+                    <p className="text-gray-600 mb-1">Coimbatore, Tamil Nadu 641018, India</p>
+                    <p className="text-gray-600 mb-3">+91 (0422) 445-6789</p>
+                    <p className="text-gray-600">coimbatore@deva-architecture.in</p>
                   </div>
                   
                   <div>
-                    <h3 className="font-display text-xl font-bold mb-2">Singapore</h3>
-                    <p className="text-gray-600 mb-1">789 Design Boulevard</p>
-                    <p className="text-gray-600 mb-1">Singapore 018956</p>
-                    <p className="text-gray-600 mb-3">+65 6789 0123</p>
-                    <p className="text-gray-600">singapore@architectureplus.design</p>
+                    <h3 className="font-display text-xl font-bold mb-2">Bangalore</h3>
+                    <p className="text-gray-600 mb-1">78 Indiranagar Main Road</p>
+                    <p className="text-gray-600 mb-1">Bangalore, Karnataka 560038, India</p>
+                    <p className="text-gray-600 mb-3">+91 (080) 4567-8901</p>
+                    <p className="text-gray-600">bangalore@deva-architecture.in</p>
                   </div>
                 </div>
                 
