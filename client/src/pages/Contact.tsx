@@ -60,10 +60,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Architecture+Design</title>
+        <title>Contact Us | Deva Architecture | Chennai</title>
         <meta 
           name="description" 
-          content="Get in touch with Architecture+Design for inquiries, collaborations, or to discuss your project needs."
+          content="Get in touch with Deva Architecture in Chennai for inquiries about architectural services, interior design collaborations, or to discuss your project needs in South India."
         />
       </Helmet>
       

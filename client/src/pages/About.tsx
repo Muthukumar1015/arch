@@ -4,22 +4,22 @@ import { Link } from "wouter";
 export default function About() {
   const teamMembers = [
     {
-      name: "Sofia Rossi",
+      name: "Rajesh Deva",
       position: "Principal Architect & Founder",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "Marcus Chen",
+      name: "Vikram Nair",
       position: "Design Director",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "Elena Kowalski",
+      name: "Priya Subramaniam",
       position: "Interior Design Lead",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     },
     {
-      name: "James Patel",
+      name: "Arun Sharma",
       position: "Sustainability Director",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
@@ -28,10 +28,10 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Architecture+Design</title>
+        <title>About Us | Deva Architecture | Chennai</title>
         <meta 
           name="description" 
-          content="Learn about Architecture+Design, our values, our team of professionals, and our approach to creating inspirational spaces."
+          content="Learn about Deva Architecture, Chennai's leading architectural studio, our values, our team of professionals, and our approach to creating inspirational spaces across South India."
         />
       </Helmet>
       
@@ -43,13 +43,13 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-xl mb-6">
-                  Founded in 2005, Architecture+Design has grown from a small studio in Milan to an internationally recognized practice with a global portfolio of award-winning projects.
+                  Founded in 2005, Deva Architecture has grown from a small design studio in Chennai to one of South India's most respected architectural practices with award-winning projects across Tamil Nadu and beyond.
                 </p>
                 <p className="text-gray-600 mb-6">
-                  Our journey began with a simple vision: to create spaces that inspire and elevate the human experience. Today, that vision continues to drive our work across residential, commercial, cultural, and public realms.
+                  Our journey began with a vision that combines Tamil architectural heritage with contemporary design principles. Today, that vision continues to drive our work across residential, commercial, cultural, and public projects throughout the region.
                 </p>
                 <p className="text-gray-600">
-                  We believe that thoughtful design has the power to transform lives and communities. Every project, regardless of scale or budget, receives our full creative attention and technical expertise.
+                  We believe thoughtful design that respects local context can transform lives and communities. Every project, from luxury residences to commercial complexes, receives our full creative attention and technical expertise with a distinctly South Indian perspective.
                 </p>
               </div>
               <div>
@@ -67,21 +67,21 @@ export default function About() {
             <h2 className="font-display text-3xl font-bold mb-10 text-center">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-8 rounded-md">
-                <h3 className="font-display text-xl font-bold mb-4">Design Excellence</h3>
+                <h3 className="font-display text-xl font-bold mb-4">Cultural Heritage</h3>
                 <p className="text-gray-600">
-                  We pursue creative solutions that balance beauty, functionality, and technical innovation. Our designs aim to create meaningful connections between people, buildings, and their surroundings.
+                  We draw inspiration from the rich architectural traditions of South India, blending Dravidian principles with contemporary design. Our work respects cultural heritage while looking confidently toward the future.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-md">
-                <h3 className="font-display text-xl font-bold mb-4">Sustainability</h3>
+                <h3 className="font-display text-xl font-bold mb-4">Climate-Responsive Design</h3>
                 <p className="text-gray-600">
-                  Environmental responsibility is integral to our practice. We design with the future in mind, embracing strategies and technologies that minimize ecological impact and maximize resource efficiency.
+                  Our designs respond intelligently to Chennai's tropical climate, using passive cooling, natural ventilation, and thoughtful orientation to create comfortable spaces while minimizing energy consumption.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-md">
-                <h3 className="font-display text-xl font-bold mb-4">Collaboration</h3>
+                <h3 className="font-display text-xl font-bold mb-4">Community Focus</h3>
                 <p className="text-gray-600">
-                  Great design emerges from dialogue. We foster collaborative relationships with clients, consultants, builders, and communities to create outcomes that exceed expectations.
+                  We believe architecture should strengthen communities. Whether designing homes, workplaces, or public spaces, we create environments that foster human connection and enhance the social fabric of neighborhoods.
                 </p>
               </div>
             </div>

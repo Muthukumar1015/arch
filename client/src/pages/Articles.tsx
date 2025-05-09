@@ -10,10 +10,10 @@ export default function Articles() {
   return (
     <>
       <Helmet>
-        <title>Articles | Architecture+Design</title>
+        <title>Articles | Deva Architecture | Chennai</title>
         <meta 
           name="description" 
-          content="Read our insights on architecture, design trends, sustainability, and industry innovations."
+          content="Read our insights on South Indian architecture, local design trends, sustainability practices, and innovations in the Chennai construction industry."
         />
       </Helmet>
       
