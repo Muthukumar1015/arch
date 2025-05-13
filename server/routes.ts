@@ -34,6 +34,47 @@ function startPythonEmailService() {
 startPythonEmailService();
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Email service test endpoint
+  app.get("/api/email-service-status", async (_req: Request, res: Response) => {
+    try {
+      // Check if Python email service is running
+      const response = await axios.get(`${PYTHON_EMAIL_SERVICE_URL}/api/test-email`);
+      res.status(200).json(response.data);
+    } catch (error) {
+      console.error("Failed to connect to Python email service:", error);
+      res.status(500).json({
+        status: "error",
+        message: "Failed to connect to Python email service",
+        error: error instanceof Error ? error.message : "Unknown error"
+      });
+    }
+  });
+  
+  // Send test email
+  app.post("/api/send-test-email", async (req: Request, res: Response) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email) {
+        return res.status(400).json({
+          success: false,
+          message: "Email address is required"
+        });
+      }
+      
+      // Forward request to Python service
+      const response = await axios.post(`${PYTHON_EMAIL_SERVICE_URL}/api/send-test-email`, { email });
+      res.status(response.status).json(response.data);
+    } catch (error) {
+      console.error("Failed to send test email:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to send test email",
+        error: error instanceof Error ? error.message : "Unknown error"
+      });
+    }
+  });
+  
   // API endpoint for creating bookings
   app.post("/api/bookings", async (req: Request, res: Response) => {
     try {

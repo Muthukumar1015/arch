@@ -13,6 +13,7 @@ import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
 import Booking from "@/pages/booking";
 import FAQ from "@/pages/faq";
+import AdminPage from "@/pages/admin";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import CookieConsent from "@/components/layout/cookie-consent";
