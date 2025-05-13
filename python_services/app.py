@@ -135,5 +135,49 @@ def contact_email():
             "message": f"Error processing request: {str(e)}"
         }), 500
 
+@app.route('/api/smtp-config', methods=['POST'])
+def set_smtp_config():
+    """Set SMTP configuration"""
+    try:
+        data = request.get_json()
+        
+        # Validate required fields
+        required_fields = ['server', 'port', 'username', 'password']
+        for field in required_fields:
+            if field not in data:
+                return jsonify({
+                    "success": False, 
+                    "message": f"Missing required field: {field}"
+                }), 400
+        
+        # Write to .env file - use absolute path in the python_services directory
+        import os
+        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+        with open(env_path, 'w') as f:
+            f.write(f"# SMTP Configuration\n")
+            f.write(f"SMTP_SERVER={data['server']}\n")
+            f.write(f"SMTP_PORT={data['port']}\n")
+            f.write(f"SMTP_USERNAME={data['username']}\n")
+            f.write(f"SMTP_PASSWORD={data['password']}\n")
+            f.write(f"SENDER_EMAIL={data.get('sender_email', data['username'])}\n")
+        
+        # Update environment variables
+        os.environ['SMTP_SERVER'] = data['server']
+        os.environ['SMTP_PORT'] = str(data['port'])
+        os.environ['SMTP_USERNAME'] = data['username']
+        os.environ['SMTP_PASSWORD'] = data['password']
+        os.environ['SENDER_EMAIL'] = data.get('sender_email', data['username'])
+        
+        return jsonify({
+            "success": True,
+            "message": "SMTP configuration saved successfully"
+        }), 200
+        
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "message": f"Error saving SMTP configuration: {str(e)}"
+        }), 500
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)

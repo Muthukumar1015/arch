@@ -32,6 +32,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/booking" component={Booking} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/admin" component={AdminPage} />
       <Route component={NotFound} />
     </Switch>
   );

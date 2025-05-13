@@ -50,6 +50,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
   
+  // Configure SMTP settings
+  app.post("/api/smtp-config", async (req: Request, res: Response) => {
+    try {
+      const { server, port, username, password } = req.body;
+      
+      // Validate required fields
+      if (!server || !port || !username || !password) {
+        return res.status(400).json({
+          success: false,
+          message: "All SMTP configuration fields are required"
+        });
+      }
+      
+      // Forward request to Python service
+      const response = await axios.post(`${PYTHON_EMAIL_SERVICE_URL}/api/smtp-config`, {
+        server,
+        port,
+        username,
+        password
+      });
+      
+      res.status(response.status).json(response.data);
+    } catch (error) {
+      console.error("Failed to configure SMTP:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to configure SMTP settings",
+        error: error instanceof Error ? error.message : "Unknown error"
+      });
+    }
+  });
+  
   // Send test email
   app.post("/api/send-test-email", async (req: Request, res: Response) => {
     try {
